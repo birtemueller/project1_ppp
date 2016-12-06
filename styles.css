@@ -1,8 +1,8 @@
 /* Global Layout Set-up */
-* { 
+* {
   box-sizing: border-box;
 }
-  
+
 body {
   margin: 0;
   padding: 0;
@@ -45,6 +45,8 @@ a:hover {
     margin-right: auto;
     color: white;
 }
+
+
 .nav li {
   padding: 5px 10px 10px 10px;
 }
@@ -57,7 +59,7 @@ a:hover {
 
 header {
   text-align: center;
-  background: url('images/portland.jpg') no-repeat top center ;
+  background: url('images/hamburg.jpg') no-repeat top center ;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
@@ -76,17 +78,24 @@ header .profile-image {
 header .profile-image:hover {
   transform: scale(1.2) rotate(5deg);
 }
+
+/****
+Header Personal and Contact Page
+****/
+
+
+}
 .tag {
   background-color: #efefef;
-  color: black;
+  color: #4c4c4c;
   padding: 10px;
   border-radius: 5px;
   display: table;
   margin: 10px auto;
-} 
+}
 .location {
   background-color: #222;
-  color: yellow;
+  color: #7acc7a;
 }
 .card {
   margin: 30px;
@@ -152,14 +161,12 @@ a.social {
   transition: all .5s;
 }
 a.twitter {
-  background-image: url(images/twitter.svg);
+  background-image: url(images/twitter-wrap.png);
 }
-a.linkedin {
-  background-image: url(images/linkedin.svg);
+a.facebook {
+  background-image: url(images/facebook-wrap.png);
 }
-a.github {
-  background-image: url(images/github.svg);
-}
+
 a.social:hover {
   opacity: 1;
 }
@@ -167,12 +174,16 @@ a.social:hover {
   clear: both;
 }
 
+.selected {
+  color: green;
+}
+
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
-  
+
   .flex {
       display: -ms-flexbox;      /* TWEENER - IE 10 */
-      display: flex; 
+      display: flex;
       max-width: 1200px;
       -ms-flex-pack: distribute;
       justify-content: space-around;
