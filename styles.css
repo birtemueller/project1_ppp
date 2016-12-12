@@ -45,8 +45,6 @@ a:hover {
     margin-right: auto;
     color: white;
 }
-
-
 .nav li {
   padding: 5px 10px 10px 10px;
 }
@@ -67,7 +65,8 @@ header {
 header {
   line-height: 1.5;
 }
-header .profile-image {
+
+header .profile-image, .subsite-profile-image {
   margin-top: 50px;
   width: 150px;
   height: 150px;
@@ -75,16 +74,11 @@ header .profile-image {
   border: 3px solid white;
   transition: all .5s;
 }
-header .profile-image:hover {
+header .profile-image:hover, .subsite-profile-image:hover {
   transform: scale(1.2) rotate(5deg);
 }
 
-/****
-Header Personal and Contact Page
-****/
 
-
-}
 .tag {
   background-color: #efefef;
   color: #4c4c4c;
@@ -108,7 +102,7 @@ Header Personal and Contact Page
   transition: all .5s;
 }
 .card:hover {
-  border-color: #ff99ff;
+  border-color: #7acc7a;
 }
 
 ul.skills {
@@ -163,10 +157,12 @@ a.social {
 a.twitter {
   background-image: url(images/twitter-wrap.png);
 }
+a.github {
+  background-image: url(images/github.svg);
+}
 a.facebook {
   background-image: url(images/facebook-wrap.png);
 }
-
 a.social:hover {
   opacity: 1;
 }
@@ -174,8 +170,26 @@ a.social:hover {
   clear: both;
 }
 
-.selected {
-  color: green;
+/*********
+Subsites
+**********/
+
+.header-subsite {
+  padding-top: 40px;
+  padding-right: 40px;
+  width: 100%;
+  height: 300px;
+  background: url(images/hamburg.jpg);
+}
+
+.subsite-profile-image {
+  float: right;
+}
+
+
+
+ul {
+  list-style: none;
 }
 
 /* Styles for larger screens */
@@ -199,6 +213,9 @@ a.social:hover {
     padding: 0 30px;
   }
 
+.card {
+  min-width: 500px;
+}
 
   main {
     padding-top: 20px;
