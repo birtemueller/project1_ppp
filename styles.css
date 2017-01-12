@@ -18,7 +18,7 @@ a {
   color: #999;
 }
 a:hover {
-  color: #6633ff;
+  color: #7acc7a;
 }
 
 /* Section Styles */
@@ -30,6 +30,7 @@ a:hover {
   padding: 10px;
   position: fixed;
   text-align: center;
+  z-index: 9;
 }
 .nav {
   display: flex;
@@ -71,7 +72,7 @@ header .profile-image, .subsite-profile-image {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 3px solid white;
+  border: 3px dotted white;
   transition: all .5s;
 }
 header .profile-image:hover, .subsite-profile-image:hover {
@@ -113,14 +114,14 @@ ul.skills {
 .skills li {
   border-radius: 6px;
   display: inline-block;
-  background: #ff9904;
+  background: #a385ea;
   color: white;
   padding: 5px 10px;
   margin: 2px;
 }
 
 .skills li:nth-child(odd) {
-  background: #0399ff;
+  background: #6bd38b;
 }
 
 footer {
@@ -155,13 +156,13 @@ a.social {
   transition: all .5s;
 }
 a.twitter {
-  background-image: url(images/twitter-wrap.png);
+  background-image: url(images/twitter.svg);
+}
+a.linkedin {
+  background-image: url(images/linkedin.svg);
 }
 a.github {
   background-image: url(images/github.svg);
-}
-a.facebook {
-  background-image: url(images/facebook-wrap.png);
 }
 a.social:hover {
   opacity: 1;
@@ -186,10 +187,45 @@ Subsites
   float: right;
 }
 
+.gallery img {
+  border-radius: 50%;
+  padding: 20px;
+}
 
+.gallery img:hover {
+  transform: scale(1.2);
+  z-index: 5;
+}
 
 ul {
   list-style: none;
+}
+
+.recommendation li,
+.places li{
+  padding: 5px 0px;
+}
+
+
+
+.contact a{
+  display: block;
+  min-height: 20px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  padding: 0 0 0 30px;
+  margin: 0 0 10px;
+}
+.contact li.mail a{
+  background-image: url(images/mail.png);
+}
+
+.contact li.phone a{
+  background-image: url(images/phone.png);
+}
+
+.contact li.facebook a {
+  background-image: url(images/facebook.png);
 }
 
 /* Styles for larger screens */
